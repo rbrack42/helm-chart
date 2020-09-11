@@ -3,12 +3,32 @@ entries:
   helm-chart-test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-10T18:33:42.066654-04:00"
+    created: "2020-09-11T00:47:31.230059-04:00"
     description: A Helm chart for Kubernetes
-    digest: 10120c67df33b757f98e9e62d7f14e381d367b731c394c77cf83bc3676853c5b
+    digest: 8bde83229544914fdc9fe7c25d7f1255f8a63b09b08fb8b6297f033209ef70c4
     name: helm-chart-test
     type: application
     urls:
-    - https://mattiaperi.github.io/helm-chart/helm-chart-test-0.1.0.tgz
+    - https://rbrack42.github.io/helm-chart/helm-chart-test-0.1.0.tgz
     version: 0.1.0
-generated: "2020-09-10T18:33:42.06513-04:00"
+  mqtt:
+  - apiVersion: v2
+    appVersion: 1.6.10
+    created: "2020-09-11T00:47:31.232078-04:00"
+    description: Eclipse Mosquitto - An open source MQTT broker
+    digest: 35ff339625a93796323dab75c221ce4a2a72b9879c45cc7811230f936be6284c
+    home: https://mosquitto.org/
+    icon: https://mosquitto.org/images/mosquitto-text-side-28.png
+    keywords:
+    - message queue
+    - MQTT
+    - mosquitto
+    - eclipse-iot
+    name: mqtt
+    sources:
+    - https://github.com/eclipse/mosquitto
+    type: application
+    urls:
+    - https://rbrack42.github.io/helm-chart/mqtt-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-09-11T00:47:31.227817-04:00"
