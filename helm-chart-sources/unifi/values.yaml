@@ -7,7 +7,7 @@ strategyType: Recreate
 
 image:
   repository: jacobalberty/unifi
-  tag: 5.12.35
+  tag: stable-6
   pullPolicy: IfNotPresent
 
 # If enabled, the controller, discovery, GUI, and STUN services will not be
@@ -98,7 +98,7 @@ captivePortalService:
     #      - chart-example.local
 
 controllerService:
-  type: NodePort
+  type: LoadBalancer
   port: 8080
   ## Specify the nodePort value for the LoadBalancer and NodePort service types.
   ## ref: https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport
@@ -113,7 +113,7 @@ controllerService:
   ## Use loadBalancerIP to request a specific static IP,
   ## otherwise leave blank
   ##
-  loadBalancerIP:
+  loadBalancerIP: 10.252.30.9
   # loadBalancerSourceRanges: []
   ## Set the externalTrafficPolicy in the Service to either Cluster or Local
   # externalTrafficPolicy: Cluster
@@ -128,7 +128,7 @@ controllerService:
     tls: []
 
 stunService:
-  type: NodePort
+  type: LoadBalancer
   port: 3478   # udp
   ## Specify the nodePort value for the LoadBalancer and NodePort service types.
   ## ref: https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport
@@ -143,13 +143,13 @@ stunService:
   ## Use loadBalancerIP to request a specific static IP,
   ## otherwise leave blank
   ##
-  loadBalancerIP:
+  loadBalancerIP: 10.252.30.9
   # loadBalancerSourceRanges: []
   ## Set the externalTrafficPolicy in the Service to either Cluster or Local
   # externalTrafficPolicy: Cluster
 
 discoveryService:
-  type: NodePort
+  type: LoadBalancer
   port: 10001  # udp
   ## Specify the nodePort value for the LoadBalancer and NodePort service types.
   ## ref: https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport
@@ -164,7 +164,7 @@ discoveryService:
   ## Use loadBalancerIP to request a specific static IP,
   ## otherwise leave blank
   ##
-  loadBalancerIP:
+  loadBalancerIP: 10.252.30.9
   # loadBalancerSourceRanges: []
   ## Set the externalTrafficPolicy in the Service to either Cluster or Local
   # externalTrafficPolicy: Cluster
@@ -183,7 +183,7 @@ ingress:
   #    hosts:
   #      - chart-example.local
 
-timezone: UTC
+timezone: "America/New_York"
 
 runAsRoot: false
 UID: 999
@@ -225,7 +225,7 @@ persistence:
   ## Applies a prefix to the directories created by the unifi container
   # subPath: unifi
   accessMode: ReadWriteOnce
-  size: 5Gi
+  size: 20Gi
 
 extraVolumes: []
   ## specify additional volume to be used by extraVolumeMounts inside unifi container
