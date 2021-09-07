@@ -5,9 +5,7 @@ metadata:
   labels:
     {{- include "pentair2mqtt.labels" . | nindent 4 }}
 spec:
-  {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
-  {{- end }}
   selector:
     matchLabels:
       {{- include "pentair2mqtt.selectorLabels" . | nindent 6 }}
