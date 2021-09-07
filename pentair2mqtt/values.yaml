@@ -14,8 +14,8 @@ env:
   SCREENLOGICIP: 10.252.100.60
   MQTTIP: mqtt-mosquitto.home-automation.svc.production.local
   MQTTPORT: 1883
-  MQTTUSER: hass
-  MQTTPASS: D!11EBLm1w5!Wq
+  MQTTUSER: ""
+  MQTTPASS: ""
 
 imagePullSecrets: []
 nameOverride: ""
