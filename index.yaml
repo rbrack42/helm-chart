@@ -3,7 +3,7 @@ entries:
   helm-chart-test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-09-07T18:40:41.116215-04:00"
+    created: "2021-09-07T18:42:53.836381-04:00"
     description: A Helm chart for Kubernetes
     digest: 8bde83229544914fdc9fe7c25d7f1255f8a63b09b08fb8b6297f033209ef70c4
     name: helm-chart-test
@@ -14,7 +14,7 @@ entries:
   mqtt:
   - apiVersion: v2
     appVersion: 1.6.10
-    created: "2021-09-07T18:40:41.118081-04:00"
+    created: "2021-09-07T18:42:53.837973-04:00"
     description: Eclipse Mosquitto - An open source MQTT broker
     digest: 35ff339625a93796323dab75c221ce4a2a72b9879c45cc7811230f936be6284c
     home: https://mosquitto.org/
@@ -34,9 +34,19 @@ entries:
   pentair2mqtt:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-09-07T18:40:41.119852-04:00"
+    created: "2021-09-07T18:42:53.839891-04:00"
     description: MQTT decorator for the Pentair Screenlogic system
-    digest: 422fdb131016ce699efe6a95c903279c862e2874a5fdb9e28793aea00e46c485
+    digest: 4bf3aa95f830f2889058a94476bc2e0044dd0603f5d3904e5e505d805880ae4d
+    name: pentair2mqtt
+    type: application
+    urls:
+    - pentair2mqtt-1.0.6.tgz
+    version: 1.0.6
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2021-09-07T18:42:53.839601-04:00"
+    description: MQTT decorator for the Pentair Screenlogic system
+    digest: 99f1efe89b919362d9108bc2c098b0ab6a27af162da30c1caeccf7a3a0db7317
     name: pentair2mqtt
     type: application
     urls:
@@ -44,7 +54,7 @@ entries:
     version: 1.0.5
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-09-07T18:40:41.119502-04:00"
+    created: "2021-09-07T18:42:53.839315-04:00"
     description: MQTT decorator for the Pentair Screenlogic system
     digest: c23658a63fac9a396a7b41a523865eff0b6f451aef2abc5b7b37300016e4ac34
     name: pentair2mqtt
@@ -54,7 +64,7 @@ entries:
     version: 1.0.4
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-09-07T18:40:41.11915-04:00"
+    created: "2021-09-07T18:42:53.83901-04:00"
     description: MQTT decorator for the Pentair Screenlogic system
     digest: a6c09838d31b211f5de0df3f0c3e4ffc831ff08d4e17e676c15cb934fb83471f
     name: pentair2mqtt
@@ -64,7 +74,7 @@ entries:
     version: 1.0.3
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-09-07T18:40:41.118812-04:00"
+    created: "2021-09-07T18:42:53.838693-04:00"
     description: MQTT decorator for the Pentair Screenlogic system
     digest: cd0f417a1ab6e960236e1adb91e4112e58bdac7f655bf0999c93fac9cda12d39
     name: pentair2mqtt
@@ -74,7 +84,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-09-07T18:40:41.118473-04:00"
+    created: "2021-09-07T18:42:53.838368-04:00"
     description: MQTT decorator for the Pentair Screenlogic system
     digest: e0ca2aacd492a6b145d635def3b9cc39caf16d6cbc3bdcd887c5daa466f64a9b
     name: pentair2mqtt
@@ -82,4 +92,4 @@ entries:
     urls:
     - pentair2mqtt-1.0.1.tgz
     version: 1.0.1
-generated: "2021-09-07T18:40:41.115487-04:00"
+generated: "2021-09-07T18:42:53.835817-04:00"
