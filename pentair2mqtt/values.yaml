@@ -8,7 +8,7 @@ image:
   repository: cbschuld/pentair-screenlogic
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: latest
 
 env:
   SCREENLOGICIP: 10.252.100.60
