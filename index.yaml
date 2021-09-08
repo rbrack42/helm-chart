@@ -3,7 +3,7 @@ entries:
   helm-chart-test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-09-07T21:34:42.617676-04:00"
+    created: "2021-09-07T21:51:07.583644-04:00"
     description: A Helm chart for Kubernetes
     digest: 8bde83229544914fdc9fe7c25d7f1255f8a63b09b08fb8b6297f033209ef70c4
     name: helm-chart-test
@@ -14,7 +14,7 @@ entries:
   mqtt:
   - apiVersion: v2
     appVersion: 1.6.10
-    created: "2021-09-07T21:34:42.620539-04:00"
+    created: "2021-09-07T21:51:07.585246-04:00"
     description: Eclipse Mosquitto - An open source MQTT broker
     digest: 35ff339625a93796323dab75c221ce4a2a72b9879c45cc7811230f936be6284c
     home: https://mosquitto.org/
@@ -34,7 +34,17 @@ entries:
   pentair2mqtt:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-09-07T21:34:42.620792-04:00"
+    created: "2021-09-07T21:51:07.585848-04:00"
+    description: MQTT decorator for the Pentair Screenlogic system
+    digest: e7fde090ecf8b345f9f14d92c686e7775f5a7ff0a74b087b843904330bd9d24f
+    name: pentair2mqtt
+    type: application
+    urls:
+    - pentair2mqtt-1.1.1.tgz
+    version: 1.1.1
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2021-09-07T21:51:07.585542-04:00"
     description: MQTT decorator for the Pentair Screenlogic system
     digest: 3b651d1172ac90f48adee4b29074e61443082e239c1ff7dd75fa4b3956df3afa
     name: pentair2mqtt
@@ -42,4 +52,4 @@ entries:
     urls:
     - pentair2mqtt-1.1.0.tgz
     version: 1.1.0
-generated: "2021-09-07T21:34:42.616724-04:00"
+generated: "2021-09-07T21:51:07.583036-04:00"
